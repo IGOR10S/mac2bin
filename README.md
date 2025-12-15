@@ -4,6 +4,7 @@ This Python script allows you to **validate a MAC address** and **convert it fro
 It supports several common input formats and returns both a compact binary version and an octet-split version.
 
 ## Requirements
+
 - Python 3.x
 - Standard module `re`
 
@@ -23,11 +24,13 @@ It supports several common input formats and returns both a compact binary versi
 ## Description
 
 #### check_mac(mac)
+
 - Verify that the entered MAC address complies with one of the formats allowed via **regular expressions**
 - Remove any separators (`:`, `-`, `.`)
 - Start binary conversion if format is valid
 
 #### convert_mac(mac)
+
 - Split MAC address into 2-character octets
 - Converts each octet from **hexadecimal to binary**
 - Produces two outputs:
@@ -35,6 +38,7 @@ It supports several common input formats and returns both a compact binary versi
   - Compact 48-bit binary version
 
 #### main()
+
 - Requires MAC address input from standard input
 - Start the validation and conversion process
 
